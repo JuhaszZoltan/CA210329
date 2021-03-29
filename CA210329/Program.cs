@@ -25,11 +25,11 @@ namespace CA210329
             //F06B();
             //F07B();
 
-            F0107C();
+            F0307C();
             Console.ReadKey();
         }
 
-        private static void F0107C()
+        private static void F0307C()
         {
             int realHazaiCount = 0;
             int realIdegenCount = 0;
@@ -157,7 +157,7 @@ namespace CA210329
         }                
         private static void F02()
         {
-            var sr = new StreamReader("eredmenyek.csv", Encoding.UTF8);
+            var sr = new StreamReader(@"..\..\RES\eredmenyek.csv", Encoding.UTF8);
             sr.ReadLine();
             while (!sr.EndOfStream)
                 merkozesek.Add(new Merkozes(sr.ReadLine()));
